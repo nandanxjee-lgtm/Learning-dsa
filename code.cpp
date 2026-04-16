@@ -1,27 +1,22 @@
 #include<iostream>
 using namespace std;
-int dec2binary(int n){
-    int ans=0, pow=1,rem;
-    for(int i=0;n>0;n/=2){
-            rem=(n%2)*pow;
-            pow*=10;
-            ans=ans+rem;
-
-    }
-    return ans;
-}
-int binary2dec(int n){
-    int pow=1,ans=0;
-    for(int i=0;n>0;n/=10){
-        ans+=(n%10)*pow;
-        pow*=2;   
-    }
-    return ans;
-}
 int main(){
-    cout<<binary2dec(110010)<<endl;
+    // int a=4,b=8;
+    // cout<<(a & b);
+    // cout<<endl;
+    // cout<<(a|b);
+    // cout<<endl;
+    // cout<<(a^b);
+    // cout<<endl;
+    // cout<<(6&10)<<endl;
+    // cout<<(6|10)<<endl;
+    // cout<<(6^10)<<endl;
+    // cout<<(10<<2)<<endl;
+    // cout<<(10>>1)<<endl;
+    unsigned int a;
+    cin>>a;
+    cout<<a<<endl;
     return 0;
 }
-
 
 // g++ code.cpp && ./a.out
